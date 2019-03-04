@@ -1,0 +1,50 @@
+{
+  "name": "probot-app-monorepo-sync",
+  "version": "0.0.1",
+  "description": "Probot app that keeps parent and child monorepos in sync",
+  "author": "Chris Deacy <deacy@uber.com>",
+  "license": "MIT",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "start": "probot run ./lib/index.js",
+    "test": "npm run lint && jest"
+  },
+  "dependencies": {
+    "@chrisdothtml/not-subtree": "^0.0.1",
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.1",
+    "just-safe-get": "^1.3.0",
+    "p-queue": "^4.0.0",
+    "probot": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^22.4.3",
+    "nock": "^10.0.0",
+    "nodemon": "^1.17.2",
+    "prettier": "^1.16.4",
+    "smee-client": "^1.0.2"
+  },
+  "engines": {
+    "node": ">= 8.3.0",
+    "yarn": ">=1.12"
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
