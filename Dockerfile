@@ -1,0 +1,8 @@
+FROM uber/web-base-image:1.0.9@sha256:98ad970fd8dadc43ecec9909e27dc543a88d096f722d00e07e0b25047e9388bc
+
+WORKDIR /probot-app-monorepo-sync
+
+COPY package.json yarn.lock /probot-app-monorepo-sync/
+RUN yarn
+
+COPY . .
