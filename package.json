@@ -27,6 +27,7 @@
     "eslint": "^5.15.3",
     "eslint-plugin-prettier": "^3.0.1",
     "jest": "^24.5.0",
+    "just-clone": "^3.1.0",
     "nock": "^10.0.6",
     "nodemon": "^1.17.2",
     "prettier": "^1.16.4",
