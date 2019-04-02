@@ -10,7 +10,7 @@
     "probot-app"
   ],
   "scripts": {
-    "dev": "nodemon -w lib",
+    "dev": "nodemon",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "start": "probot run ./lib/index.js",
@@ -41,7 +41,7 @@
     "exec": "npm start",
     "watch": [
       ".env",
-      "."
+      "lib"
     ]
   },
   "jest": {
