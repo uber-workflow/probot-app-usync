@@ -13,7 +13,7 @@
     "dev": "nodemon",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "start": "probot run ./lib/index.js",
+    "start": "probot run ./index.js",
     "test": "npm run lint && jest"
   },
   "dependencies": {
