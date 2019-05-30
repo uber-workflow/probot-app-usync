@@ -3176,6 +3176,11 @@ just-safe-get@^1.3.0:
   resolved "https://registry.yarnpkg.com/just-safe-get/-/just-safe-get-1.3.0.tgz#d886967178bf1533c5118267ad0a8dc0df7ce7f6"
   integrity sha512-HpKrvuHv1sZuG8aV5w2X9bl8Di0mT9sE836Vj3UZ/IDR/XxynWWAoCH4aLyeXSlRpmRnAzRmyPh2PDUpDpW6Dg==
 
+just-safe-set@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/just-safe-set/-/just-safe-set-2.1.0.tgz#237234e681a4f330b5dfa71a5251f34962813ef9"
+  integrity sha512-wSTg/2bQpzyivBYbWPqQgafdfxW0tr3hX9qYGDRS2ws+AXwc7tvn8ABqkp8iPQHChjj4F5JvL3t0FQLbcNuKig==
+
 jwa@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/jwa/-/jwa-1.4.0.tgz#8f61dc799acf0309f2d4b22a91ce73d6d2bb206c"

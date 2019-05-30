@@ -23,6 +23,7 @@
     "just-index": "^2.1.0",
     "just-pick": "^2.1.0",
     "just-safe-get": "^1.3.0",
+    "just-safe-set": "^2.1.0",
     "p-queue": "^4.0.0",
     "probot": "^9.2.10"
   },
