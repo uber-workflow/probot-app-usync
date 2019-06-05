@@ -17,10 +17,9 @@
     "test": "npm run lint && jest"
   },
   "dependencies": {
-    "@octokit/graphql": "^2.1.1",
-    "@octokit/rest": "^16.25.4",
+    "@octokit/app": "^3.0.0",
+    "@octokit/request": "^4.1.0",
     "esm": "^3.2.22",
-    "just-flatten-it": "^2.1.0",
     "just-index": "^2.1.0",
     "just-pick": "^2.1.0",
     "just-range": "^2.1.0",
