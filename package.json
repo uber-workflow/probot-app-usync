@@ -17,12 +17,14 @@
     "test": "npm run lint && jest"
   },
   "dependencies": {
-    "@octokit/graphql": "^2.1.1",
-    "@octokit/rest": "^16.25.4",
+    "@octokit/app": "^3.0.0",
+    "@octokit/request": "^4.1.0",
     "esm": "^3.2.22",
     "just-index": "^2.1.0",
     "just-pick": "^2.1.0",
+    "just-range": "^2.1.0",
     "just-safe-get": "^1.3.0",
+    "just-safe-set": "^2.1.0",
     "p-queue": "^4.0.0",
     "probot": "^9.2.10"
   },
@@ -43,7 +45,6 @@
   "nodemonConfig": {
     "exec": "npm start",
     "watch": [
-      ".env",
       "lib"
     ]
   },
