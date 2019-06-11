@@ -332,7 +332,14 @@
   dependencies:
     bottleneck "^2.15.3"
 
-"@octokit/request-error@^1.0.1":
+"@octokit/plugin-throttling@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-throttling/-/plugin-throttling-2.6.0.tgz#0b3107c2267e3a8cf6f63925847ec3ebe9e0aa8d"
+  integrity sha512-E0xQrcD36sVEeBhut6j9nWX38vm/1LKMRSUqjvJ/mqGLXfHr4jYMsrR3I/nT2QC0eJL1/SKMt7zxOt7pZiFhDA==
+  dependencies:
+    bottleneck "^2.15.3"
+
+"@octokit/request-error@^1.0.1", "@octokit/request-error@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@octokit/request-error/-/request-error-1.0.2.tgz#e6dbc5be13be1041ef8eca9225520982add574cf"
   integrity sha512-T9swMS/Vc4QlfWrvyeSyp/GjhXtYaBzCcibjGywV4k4D2qVrQKfEMPy8OxMDEj7zkIIdpHwqdpVbKCvnUPqkXw==
@@ -352,7 +359,7 @@
     once "^1.4.0"
     universal-user-agent "^2.0.1"
 
-"@octokit/request@^4.1.0":
+"@octokit/request@^4.0.1", "@octokit/request@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@octokit/request/-/request-4.1.0.tgz#e85dc377113baf2fe24433af8feb20e8a32e21b0"
   integrity sha512-RvpQAba4i+BNH0z8i0gPRc1ShlHidj4puQjI/Tno6s+Q3/Mzb0XRSHJiOhpeFrZ22V7Mwjq1E7QS27P5CgpWYA==
@@ -375,6 +382,25 @@
     before-after-hook "^1.4.0"
     btoa-lite "^1.0.0"
     deprecation "^1.0.1"
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    lodash.uniq "^4.5.0"
+    octokit-pagination-methods "^1.1.0"
+    once "^1.4.0"
+    universal-user-agent "^2.0.0"
+    url-template "^2.0.8"
+
+"@octokit/rest@^16.28.1":
+  version "16.28.1"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.28.1.tgz#a10c3d4fe61e994878d66a4c12b9923b18548236"
+  integrity sha512-9H/5F0f2bSVhk78ypu/A9dkK5GCH/aI8CxRJ0L8JU/XEYNIYozxqD6HVC7shsofrCfR61YORfjTE+GxfZ/wasQ==
+  dependencies:
+    "@octokit/request" "^4.0.1"
+    "@octokit/request-error" "^1.0.2"
+    atob-lite "^2.0.0"
+    before-after-hook "^1.4.0"
+    btoa-lite "^1.0.0"
+    deprecation "^2.0.0"
     lodash.get "^4.4.2"
     lodash.set "^4.3.2"
     lodash.uniq "^4.5.0"

@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "@octokit/app": "^3.0.0",
-    "@octokit/request": "^4.1.0",
+    "@octokit/plugin-throttling": "^2.6.0",
+    "@octokit/rest": "^16.28.1",
     "esm": "^3.2.22",
     "just-index": "^2.1.0",
     "just-pick": "^2.1.0",
