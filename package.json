@@ -12,9 +12,8 @@
   "scripts": {
     "dev": "nodemon",
     "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
     "start": "probot run ./index.js",
-    "test": "npm run lint && jest"
+    "test": "jest"
   },
   "dependencies": {
     "@octokit/app": "^3.0.1",
@@ -49,6 +48,9 @@
     "exec": "npm start",
     "watch": [
       "lib"
+    ],
+    "ignore": [
+      "*.test.js"
     ]
   },
   "jest": {
