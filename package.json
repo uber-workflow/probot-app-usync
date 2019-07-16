@@ -1,7 +1,7 @@
 {
   "name": "probot-app-monorepo-sync",
-  "version": "1.4.1",
-  "description": "Probot app that keeps parent and child monorepos in sync",
+  "version": "2.0.0-0",
+  "description": "Sync subdirectories of a monorepo with external repos",
   "author": "Chris Deacy <deacy@uber.com>",
   "license": "MIT",
   "keywords": [
@@ -16,26 +16,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@octokit/app": "^3.0.1",
-    "@octokit/endpoint": "^5.1.7",
-    "@octokit/plugin-throttling": "^2.3.0",
-    "@octokit/rest": "^16.25.0",
-    "esm": "^3.2.22",
-    "just-clone": "^3.1.0",
-    "just-flatten-it": "^2.1.0",
-    "just-index": "^2.1.0",
-    "just-pick": "^2.1.0",
-    "just-range": "^2.1.0",
-    "just-safe-get": "^1.3.0",
-    "just-safe-set": "^2.1.0",
-    "lru-cache": "^5.1.1",
     "p-queue": "^4.0.0",
     "probot": "^9.2.15"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "babel-jest": "^24.8.0",
     "eslint": "^5.15.3",
     "eslint-plugin-prettier": "^3.0.1",
     "jest": "^24.8.0",
