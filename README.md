@@ -55,3 +55,7 @@ Import a pull request from an external repo into the monorepo. This should be co
 #### `!land`
 
 Land a pull request from the monorepo into it and any configured external repos. This applies not only to imported pull requests, but also those authored directly from the monorepo.
+
+## License
+
+[MIT](LICENSE)
