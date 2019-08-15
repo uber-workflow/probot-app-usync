@@ -11,5 +11,11 @@
       "program": "${workspaceFolder}/node_modules/probot/bin/probot-run.js",
       "args": ["./index.js"],
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch jest",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+    },
   ]
 }
