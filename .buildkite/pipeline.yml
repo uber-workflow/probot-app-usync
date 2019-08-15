@@ -1,8 +1,8 @@
 steps:
-  - name: ':docker: :package:'
+  - name: ':docker:'
     plugins:
-      'docker-compose#v1.7.0':
-        build: probot-app-monorepo-sync
+      'docker-compose#v3.0.0':
+        build: ci
         image-repository: 027047743804.dkr.ecr.us-east-2.amazonaws.com/uber
     agents:
       queue: builders
@@ -10,14 +10,14 @@ steps:
   - name: ':eslint:'
     command: yarn lint
     plugins:
-      'docker-compose#v1.7.0':
-        run: probot-app-monorepo-sync
+      'docker-compose#v3.0.0':
+        run: ci
     agents:
       queue: workers
   - name: ':jest:'
     command: yarn jest
     plugins:
-      'docker-compose#v1.7.0':
-        run: probot-app-monorepo-sync
+      'docker-compose#v3.0.0':
+        run: ci
     agents:
       queue: workers

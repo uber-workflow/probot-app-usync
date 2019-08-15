@@ -1,21 +1,63 @@
-# probot-app-monorepo-sync
+# probot-app-uSync
 
-[![Build Status](https://badge.buildkite.com/e11ea6abd3bec27ca72ed7c9c437be773d7878dc351ad9f7cd.svg)](https://buildkite.com/uberopensource/probot-app-monorepo-sync)
+[![Build Status](https://badge.buildkite.com/e11ea6abd3bec27ca72ed7c9c437be773d7878dc351ad9f7cd.svg?branch=master)](https://buildkite.com/uberopensource/probot-app-usync)
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that keeps parent and child monorepos in sync
+> A Probot implementation of [uSync](https://github.com/uber-workflow/usync)
 
-**NOTE**: The Github API has a limit of returning 100,000 tree items (i.e. files or folders), so this cannot support monorepos that exceed that amount of files and folders
+## Monorepo setup
 
-## Configure
+In addition to the [uSync setup](https://github.com/uber-workflow/usync#setup-your-monorepo), add this pull request template:
 
-See `.env.example` for the environment variables supported for configuring the bot
+**.github/pull_request_template.md**
+
+````md
+<!-- DO NOT MODIFY THE FORMAT OF THIS BODY -->
+
+## Summary
+
+<!-- Replace this with your own summary -->
+*No summary provided*
+
+## Commit message overrides
+
+<!--
+  The landed commit message for this change will be `[PR title]\n\n[PR summary]`.
+  Provide overrides of this message for externally synced repos below.
+
+  Example:
+  **foo/bar**
+  ```
+  My change to foo/bar
+
+  This needed to be done for [reasons]. It was achieved by [ways].
+  ```
+-->
+
+**foo/child-repo**
+````
+
+## Environment vars
+
+`GH_TOKEN`
+
+Account with access to all orgs involved in syncing
+
+`USYNC_PARENT_REPO`
+
+Name of the parent monorepo
 
 ## Comment commands
 
 These commands can be triggered by posting a comment on the PR you wish to run the command on.
 
-#### `!resync`
+#### `!import`
 
-Since the syncing of rebases and merges isn't yet perfect, there are still times in which a secondary PR can get into a broken state (most commonly, the diff will have a lot more files changed than it should).
+Import a pull request from an external repo into the monorepo. This should be considered equivalent to merging, as the external pull request will be closed, and any further changes will happen in the monorepo's generated pull request.
 
-In this case, post `!resync` on either of the PRs, and it will re-copy the commits from the primary PR to the secondary PR and force push. This is basically the equivalent to closing both PRs and remaking a new one
+#### `!land`
+
+Land a pull request from the monorepo into it and any configured external repos. This applies not only to imported pull requests, but also those authored directly from the monorepo.
+
+## License
+
+[MIT](LICENSE)
