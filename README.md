@@ -6,6 +6,8 @@
 
 ## Monorepo setup
 
+In addition to the [uSync setup](https://github.com/uber-workflow/usync#setup-your-monorepo), add this pull request template:
+
 **.github/pull_request_template.md**
 
 ````md
