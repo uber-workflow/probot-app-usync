@@ -25,7 +25,7 @@
     "just-pick": "^2.1.0",
     "just-safe-get": "^1.3.0",
     "probot": "^9.3.1",
-    "usyncit": "^0.0.1-1"
+    "usyncit": "^0.0.1-2"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
