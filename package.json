@@ -1,6 +1,6 @@
 {
   "name": "probot-app-usync",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "A Probot implementation of uSync",
   "author": "Chris Deacy <deacy@uber.com>",
   "license": "MIT",
