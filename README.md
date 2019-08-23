@@ -21,15 +21,15 @@ In addition to the [uSync setup](https://github.com/uber-workflow/usync#setup-yo
 ## Commit message overrides
 
 <!--
-  The landed commit message for this change will be `[PR title]\n\n[PR summary]`.
-  Provide overrides of this message for externally synced repos below.
+  More info:
+  https://github.com/uber-workflow/probot-app-usync#commit-messages
 
   Example:
-  **foo/bar**
+  **foo/child-repo**
   ```
-  My change to foo/bar
+  My commit title
 
-  This needed to be done for [reasons]. It was achieved by [ways].
+  My commit summary
   ```
 -->
 
@@ -57,6 +57,25 @@ Import a pull request from an external repo into the monorepo. This should be co
 #### `!land`
 
 Land a pull request from the monorepo into it and any configured external repos. This applies not only to imported pull requests, but also those authored directly from the monorepo.
+
+## Commit messages
+
+By default, when landing changes, the commit message used for external repos will be the same as the message for the parent repo (pull request title and summary). You may, however, want to provide a specific commit message for external repos.
+
+For example, perhaps you've authored a change in the parent monorepo that spans across multiple synced directories. The default commit message would likely describe all the changes made across the monorepo, but that wouldn't make sense in the context of an external repo; you'd likely want the message for that repo to only describe changes made to its directory.
+
+#### Override format
+
+As seen in the pull request template [above](#monorepo-setup), commit message overrides can be provided under the `Commit message overrides` heading via the bolded repo name followed by a code block containing the entire message:
+
+````md
+**[REPO NAME]**
+```
+My commit title
+
+My commit summary
+```
+````
 
 ## License
 
