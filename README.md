@@ -58,6 +58,8 @@ Import a pull request from an external repo into the monorepo. This should be co
 
 Land a pull request from the monorepo into it and any configured external repos. This applies not only to imported pull requests, but also those authored directly from the monorepo.
 
+By default, this will require at least one PR approval. To circumvent this, you can add the `breakglass` label to your PR.
+
 ## Commit messages
 
 By default, when landing changes, the commit message used for external repos will be the same as the message for the parent repo (pull request title and summary). You may, however, want to provide a specific commit message for external repos.
