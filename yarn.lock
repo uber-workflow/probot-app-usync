@@ -5450,10 +5450,10 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
-usyncit@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/usyncit/-/usyncit-0.0.1.tgz#785b49ec27c107cc11200e94bfd4a0a11e799f2c"
-  integrity sha512-a8ULiaO6LuHvzfgnnhsABZS9GbWOptokDPcAAgHmHcsbCBBKvpyucEBqJc6rvoyyc5jH8ECTa8esSK6gy0XX+Q==
+usyncit@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/usyncit/-/usyncit-0.1.0.tgz#e269356b98410aff974abab15e1bbee8cf39bc13"
+  integrity sha512-Z7D/iypYQsGcpT2XPPm6pC90jbCxpmgEBH6v0HPYRkfcQTLGSEOEc9MvgY6CCXKUlbkq+bQ1z44eswanpFNS+A==
   dependencies:
     execa "^2.0.3"
     fs-extra "^8.1.0"
